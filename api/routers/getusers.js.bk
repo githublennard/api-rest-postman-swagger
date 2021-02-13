@@ -1,0 +1,25 @@
+const getusers= require ('express').Router();
+
+const users = [{
+    "id": 0,
+    "name": "string",
+    "email": "string",
+    "birthDate": "string",
+    "address": {
+      "id": 0,
+      "street": "string",
+      "state": "string",
+      "city": "string",
+      "country": "string",
+      "zip": "string"
+      }
+}
+];
+
+getusers.get('/', (request, response) => {
+    response.json(users);	
+});
+
+
+module.exports = getusers;
+
