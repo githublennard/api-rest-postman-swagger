@@ -37,7 +37,6 @@ usersRouter.delete('/', (request, response) => {
     response.json(users);
 });
 
-
 //usersRouter.get('/:id', (request, response) => {
 //usersRouter.get('/:id', (request, response) => {
 //	response.json(usersAdded);
